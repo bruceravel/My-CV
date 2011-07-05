@@ -1,0 +1,17 @@
+#+TITLE: Bruce Ravel's CV
+
+* Files:
+
+  + ~cv.tex~: the LaTeX source for my CV
+  + ~allmine.bib~: bib file with all my citations
+  + ~BR_smiling.jpg~: my photo
+
+* Using these LaTeX addons
+
+  These are not my own work, but they are not standard parts of a
+  LaTeX installation, so I have included them in this repo.
+
+  + The Modern CV class: https://launchpad.net/moderncv This includes
+    the tweaklist.sty file.  Both theme files have been hacked at to
+    include a purple theme.
+  + etoolbox: http://www.ctan.org/tex-archive/macros/latex/contrib/etoolbox
