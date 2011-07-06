@@ -1,0 +1,48 @@
+--- moderncvthemeclassic.sty	2011-07-06 09:11:18.826656825 -0400
++++ moderncvthemeclassic.withpurple	2011-07-06 09:10:37.042897503 -0400
+@@ -36,6 +36,9 @@
+ % grey
+ \newif\if@colorgrey\@colorgreyfalse
+ \DeclareOption{grey}{\@colorgreytrue}
++% purple
++\newif\if@colorpurple\@colorpurplefalse
++\DeclareOption{purple}{\@colorpurpletrue}
+ 
+ % roman option
+ \newif\if@roman\@romanfalse
+@@ -87,6 +90,11 @@
+   \definecolor{sectionrectanglecolor}{rgb}{0.75,0.75,0.75}
+   \definecolor{sectiontitlecolor}{rgb}{0.35,0.35,0.35}
+   \definecolor{subsectioncolor}{rgb}{0.35,0.35,0.35}\fi
++\if@colorpurple
++  \definecolor{sectionrectanglecolor}{rgb}{0.40,0.23,0.80}
++  \definecolor{sectiontitlecolor}{rgb}{0.50,0.33,0.80}
++  \definecolor{subsectioncolor}{rgb}{0.50,0.33,0.80}
++  \definecolor{addresscolor}{rgb}{0.40,0.23,0.70}\fi
+ 
+ % fonts
+ \if@roman
+--- moderncvthemecasual.sty	2011-07-06 09:11:18.814637062 -0400
++++ moderncvthemecasual.withpurple	2011-07-06 09:10:37.042897503 -0400
+@@ -36,6 +36,9 @@
+ % grey
+ \newif\if@colorgrey\@colorgreyfalse
+ \DeclareOption{grey}{\@colorgreytrue}
++% purple
++\newif\if@colorpurple\@colorpurplefalse
++\DeclareOption{purple}{\@colorpurpletrue}
+ 
+ % roman option
+ \newif\if@roman\@romanfalse
+@@ -87,6 +90,11 @@
+   \definecolor{sectiontitlecolor}{rgb}{0.35,0.35,0.35}
+   \definecolor{subsectioncolor}{rgb}{0.35,0.35,0.35}
+   \definecolor{footersymbolcolor}{rgb}{0.35,0.35,0.35}\fi
++\if@colorpurple
++  \definecolor{sectionrectanglecolor}{rgb}{0.40,0.23,0.80}
++  \definecolor{sectiontitlecolor}{rgb}{0.50,0.33,0.80}
++  \definecolor{subsectioncolor}{rgb}{0.50,0.33,0.80}
++  \definecolor{footersymbolcolor}{rgb}{0.50,0.33,0.80}\fi
+ 
+ % fonts
+ \if@roman
