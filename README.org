@@ -10,6 +10,9 @@
 * Required downloads:
 
   + The Modern CV class: [[https://launchpad.net/moderncv]] 
-     - Unpack the zip file into the current directory (or, I suppose, install it system-wide)
+     - Unpack the zip file into the current directory (or, I suppose,
+       install it system-wide).  Really only need the ~.sty~ and
+       ~.cls~ files in the current directory.
      - Apply the patch: ~patch < moderncv.purple.patch~ to add the purple color theme
   + etoolbox: [[http://www.ctan.org/tex-archive/macros/latex/contrib/etoolbox]]
+     - Again, only need the ~etoolbox.sty~ file in the current directory.
