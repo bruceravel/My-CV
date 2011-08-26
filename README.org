@@ -3,7 +3,8 @@
 * Files:
 
   + ~cv.tex~: the LaTeX source for my CV
-  + ~allmine.bib~: bib file with all my citations
+  + ~highlights.bib~: bib file with my favorite citations
+  + ~allmine.bib~: bib file with all the rest of my citations
   + ~BR_smiling.jpg~: my photo
   + ~moderncv.purple.patch~: a patch to the Modern CV LaTeX class to add a color of my choice
 
