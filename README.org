@@ -1,5 +1,7 @@
 #+TITLE: Bruce Ravel's CV
 
+[[http://xafs.org/BruceRavel%3Faction%3DAttachFile&do%3Dget&target%3DRavel_cv.pdf][A PDF copy of my CV]]
+
 * Files:
 
   + ~cv.tex~: the LaTeX source for my CV
