@@ -16,6 +16,9 @@
      - Unpack the zip file into the current directory (or, I suppose,
        install it system-wide).  Really only need the ~.sty~ and
        ~.cls~ files in the current directory.
-     - Apply the patch: ~patch < moderncv.purple.patch~ to add the purple color theme
+     - +Apply the patch: ~patch < moderncv.purple.patch~ to add the purple color theme+ 
+       My purple theme has been included since version 0.13, so the patch is no longer necessary.
   + etoolbox: [[http://www.ctan.org/tex-archive/macros/latex/contrib/etoolbox]]
      - Again, only need the ~etoolbox.sty~ file in the current directory.
+  + I had to install Ubuntu's ~texlive-latex-extra~ to get one of
+    Modern CV's dependencies (~xargs.sty~)
