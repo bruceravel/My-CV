@@ -9,7 +9,7 @@
 
 set term wxt 0 enhanced font 'Droid sans, 12'
 
-count=system("head -1 analyze.txt | cut -f 3 | cut -d ' ' -f 3")
+count=system("head -1 analyze.txt | cut -d ' ' -f 7")
 date=system("ls -l analyze.txt | cut -f 6,7 -d ' '")
 
 ttl="citations of Athena/Artemis paper from JSR\n" . count . ' total citations'
@@ -22,6 +22,8 @@ set yrange [:400]
 set boxwidth 0.2
 set style fill solid
 set key left top samplen 0.3
+
+plot 'analyze.txt' using 1:2
 
 plot 'analyze.txt' using 1:($1>2011 ? 1/0 : $2) with boxes lt 3 title 'yearly totals',\
      '' using 1:($2+10):2 with labels title '',\
