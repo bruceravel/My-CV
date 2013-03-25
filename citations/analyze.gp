@@ -26,5 +26,5 @@ set key left top samplen 0.3
 plot 'analyze.txt' using 1:2
 
 plot 'analyze.txt' using 1:($1>2012 ? 1/0 : $2) with boxes lt 3 title 'yearly totals',\
-     '' using 1:($2+10):2 with labels title '',\
+     '' using 1:($2+15):2 with labels title '',\
      '' using 1:($1<2013 ? 1/0 : $2) with boxes lt 8 title 'as of '.date
