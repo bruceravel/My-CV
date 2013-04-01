@@ -21,5 +21,6 @@
      - Update moderncv to 1.4!
   + etoolbox: [[http://www.ctan.org/tex-archive/macros/latex/contrib/etoolbox]]
      - Again, only need the ~etoolbox.sty~ file in the current directory.
-  + I had to install Ubuntu's ~texlive-latex-extra~ to get one of
-    Modern CV's dependencies (~xargs.sty~)
+  + I had to install Ubuntu's +texlive-latex-extra+ to get one of
+    Modern CV's dependencies (~xargs.sty~).  This has since moved into
+    the ~texlive-latex3~ package.
