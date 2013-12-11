@@ -1,6 +1,6 @@
 #+TITLE: Bruce Ravel's CV
 
-[[http://xafs.org/BruceRavel?action=AttachFile&do=get&target=Ravel_cv.pdf][A PDF copy of my CV]]
+[[https://s3.amazonaws.com/BruceRavelCV/cv.pdf][A PDF copy of my CV]]
 
 * Files:
 
