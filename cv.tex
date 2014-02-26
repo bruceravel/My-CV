@@ -10,12 +10,15 @@
                                              % fonts, instead of sans
                                              % serif fonts)
 \usepackage[scale=0.8]{geometry}
+\usepackage{doi}
+%\usepackage{natbib,hyperref}
 
 \setlength{\hintscolumnwidth}{3.25cm}
 %\setlength{\footerwidth}{\textwidth}
 
 \hyphenation{EXAFS}
 
+\renewcommand*{\doi}[1]{\href{http://dx.doi.org/\detokenize{#1}}{doi: \detokenize{#1}}}
 
 % personal data
 \firstname{Bruce}
@@ -316,7 +319,7 @@ Research Project: XAFS Studies of Half-Metallic Heusler Alloys
 
 
 \nocite{*}
-\bibliographystyle{unsrt}
+\bibliographystyle{myunsrt}
 \bibliography{allmine}
 
 \end{document}
