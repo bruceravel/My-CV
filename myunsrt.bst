@@ -121,7 +121,7 @@ FUNCTION {output.doi}
 { 
     doi empty$
         { skip$ }
-        { "\href{http://dx.doi.org/" doi * "}{\small[doi:" * doi * "]}" * output }
+        { "\href{http://dx.doi.org/" doi * "}{~\small\color{color2}\homepagesymbol doi:" * doi * "}" * output }
     if$
 }
 
