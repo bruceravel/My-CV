@@ -24,3 +24,33 @@
   + I had to install Ubuntu's +texlive-latex-extra+ to get one of
     Modern CV's dependencies (~xargs.sty~).  This has since moved into
     the ~texlive-latex3~ package.
+
+* The doi/hyperref problem
+
+This happens:
+
+ : Package hyperref Message: Driver (autodetected): hpdftex.
+ : 
+ : (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
+ : (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty)))
+ : 
+ : ! LaTeX Error: Option clash for package hyperref.
+ : 
+ : See the LaTeX manual or LaTeX Companion for explanation.
+ : Type  H <return>  for immediate help.
+ :  ...                                              
+ :                                                   
+ : l.49 \begin{document}
+
+The solution is to edit the ~doi.sty~ file at 36 to read
+
+ : \RequirePackage[unicode]{hyperref}
+
+i.e. add the =[unicode]=.
+
+On my desktop at work, ~doi.sty~ is ~/usr/share/texlive/texmf-dist/tex/latex/doi/doi.sty~
+
+The reason this is necessary is that =moderncv= imports the hyperref
+package with the =[unicode]= argument.  The warning is about hyperref
+being imported differently in the two packages.
+
