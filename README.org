@@ -9,6 +9,7 @@
   + ~allmine.bib~: bib file with all the rest of my citations
   + ~BR_smiling.jpg~: my photo
   + ~moderncv.purple.patch~: a patch to the Modern CV LaTeX class to add a color of my choice
+  + ~mydoi.sty~: a patched copy of the standard ~doi.sty~
 
 * Required downloads:
 
@@ -42,7 +43,7 @@ This happens:
  :                                                   
  : l.49 \begin{document}
 
-The solution is to edit the ~doi.sty~ file at 36 to read
+The solution is to edit the ~doi.sty~ file at line 36 to read
 
  : \RequirePackage[unicode]{hyperref}
 
@@ -53,4 +54,11 @@ On my desktop at work, ~doi.sty~ is ~/usr/share/texlive/texmf-dist/tex/latex/doi
 The reason this is necessary is that =moderncv= imports the hyperref
 package with the =[unicode]= argument.  The warning is about hyperref
 being imported differently in the two packages.
+
+Alternately, simply remove line 36, which works because hyperref is
+already loaded.
+
+~mydoi.cls~ is a copy of ~doi.sty~ version 2007/07/24 with line 36
+commented out
+
 
