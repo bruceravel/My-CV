@@ -17,14 +17,14 @@ ttl="citations of Athena/Artemis paper from JSR\n" . count . ' total citations'
 set title ttl
 set xlabel 'year'
 set ylabel 'number of citations'
-set xrange [2004.5:2014.5]
-set yrange [:600]
+set xrange [2004.5:2015.5]
+set yrange [:650]
 set boxwidth 0.2
 set style fill solid
 set key left top samplen 0.3
 
 plot 'analyze.txt' using 1:2
 
-plot 'analyze.txt' using 1:($1>2013 ? 1/0 : $2) with boxes lt 3 title 'yearly totals',\
+plot 'analyze.txt' using 1:($1>2014 ? 1/0 : $2) with boxes lt 3 title 'yearly totals',\
      '' using 1:($2+25):2 with labels title '',\
-     '' using 1:($1<2014 ? 1/0 : $2) with boxes lt 8 title 'as of '.date
+     '' using 1:($1<2015 ? 1/0 : $2) with boxes lt 8 title 'as of '.date
