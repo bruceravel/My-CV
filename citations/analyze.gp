@@ -7,7 +7,7 @@
 ## at Web of Science, search for "expgui" in Journal of Applied
 ## Crystallography
 
-set term wxt 0 enhanced font 'Droid sans, 12'
+set term qt 0 enhanced font 'Droid sans, 12'
 
 count=system("head -1 analyze.txt | cut -d ' ' -f 7")
 date=system("ls -l analyze.txt | cut -f 6,7 -d ' '")
