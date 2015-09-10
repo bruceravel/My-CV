@@ -8,6 +8,8 @@
 ## Crystallography
 
 set term qt 0 enhanced font 'Droid sans, 12'
+#set term postscript color enhanced landscape solid font 'Arial,14'
+#set out 'citations.ps'
 
 count=system("head -1 analyze.txt | cut -d ' ' -f 7")
 date=system("ls -l analyze.txt | cut -f 6,7 -d ' '")
