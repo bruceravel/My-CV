@@ -19,7 +19,7 @@ ttl="citations of Athena/Artemis paper from JSR\n" . count . ' total citations'
 set title ttl
 set xlabel 'year'
 set ylabel 'number of citations'
-set xrange [2004.5:2015.5]
+set xrange [2004.5:2016.5]
 set yrange [:700]
 set boxwidth 0.2
 set style fill solid
