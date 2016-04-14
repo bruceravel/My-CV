@@ -667,6 +667,7 @@ FUNCTION {incollection}
       format.chapter.pages output
     }
   if$
+  output.doi
   new.block
   output.doi
   new.block
