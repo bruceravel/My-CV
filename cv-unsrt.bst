@@ -121,7 +121,7 @@ FUNCTION {output.doi}
 { 
     doi empty$
         { skip$ }
-        { "\href{http://dx.doi.org/" doi * "}{~\small\color{color2}\homepagesymbol doi:" * doi * "}" * output }
+        { "\href{https://doi.org/" doi * "}{~\small\color{color2}\homepagesymbol doi:" * doi * "}" * output }
     if$
 }
 
@@ -667,6 +667,8 @@ FUNCTION {incollection}
       format.chapter.pages output
     }
   if$
+  new.block
+  output.doi
   new.block
   note output
   fin.entry
