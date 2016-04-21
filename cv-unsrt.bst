@@ -669,8 +669,6 @@ FUNCTION {incollection}
   if$
   output.doi
   new.block
-  output.doi
-  new.block
   note output
   fin.entry
 }
