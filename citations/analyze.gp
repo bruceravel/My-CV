@@ -11,6 +11,10 @@ set term qt 0 enhanced font 'Droid sans, 12'
 #set term postscript color enhanced landscape solid font 'Arial,14'
 #set out 'citations.ps'
 
+set style line 1 linecolor rgb "blue" pointsize 1 pointtype 7
+set style line 2 linecolor rgb "red"  pointsize 1 pointtype 9
+
+
 count=system("head -1 analyze.txt | cut -d ' ' -f 7")
 date=system("ls -l analyze.txt | cut -f 6,7 -d ' '")
 
@@ -27,6 +31,6 @@ set key left top samplen 0.3
 
 plot 'analyze.txt' using 1:2
 
-plot 'analyze.txt' using 1:($1>2015 ? 1/0 : $2) with boxes lt 3 title 'yearly totals',\
+plot 'analyze.txt' using 1:($1>2015 ? 1/0 : $2) with boxes ls 1 title 'yearly totals',\
      '' using 1:($2+25):2 with labels title '',\
-     '' using 1:($1<2016 ? 1/0 : $2) with boxes lt 8 title 'as of '.date
+     '' using 1:($1<2016 ? 1/0 : $2) with boxes ls 2 title 'as of '.date
