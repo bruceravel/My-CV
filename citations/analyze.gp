@@ -16,7 +16,8 @@ set style line 2 linecolor rgb "red"  pointsize 1 pointtype 9
 
 
 count=system("head -1 analyze.txt | cut -d ' ' -f 7")
-date=system("ls -l analyze.txt | cut -f 6,7 -d ' '")
+#date=system("ls -l analyze.txt | cut -f 6,7 -d ' '")
+date=system("ls -l analyze.txt | cut -f 6,8 -d ' '")
 
 ttl="citations of Athena/Artemis paper from JSR\n" . count . ' total citations'
 
@@ -24,7 +25,7 @@ set title ttl
 set xlabel 'year'
 set ylabel 'number of citations'
 set xrange [2004.5:2017.5]
-set yrange [:720]
+set yrange [:750]
 set boxwidth 0.2
 set style fill solid
 set key left top samplen 0.3
