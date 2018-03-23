@@ -25,13 +25,13 @@ set title ttl
 set xlabel 'year'
 set ylabel 'number of citations'
 set xrange [2004.5:2018.5]
-set yrange [:750]
+set yrange [:870]
 set boxwidth 0.2
 set style fill solid
 set key left top samplen 0.3
 
 plot 'analyze.txt' using 1:2
 
-plot 'analyze.txt' using 1:($1>2016 ? 1/0 : $2) with boxes ls 1 title 'yearly totals',\
+plot 'analyze.txt' using 1:($1>2017 ? 1/0 : $2) with boxes ls 1 title 'yearly totals',\
      '' using 1:($2+25):2 with labels title '',\
-     '' using 1:($1<2017 ? 1/0 : $2) with boxes ls 2 title 'as of '.date
+     '' using 1:($1<2018 ? 1/0 : $2) with boxes ls 2 title 'as of '.date
