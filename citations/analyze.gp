@@ -25,7 +25,7 @@ set title ttl
 set xlabel 'year'
 set ylabel 'number of citations'
 set xrange [2004.5:2018.5]
-set yrange [:870]
+set yrange [:880]
 set boxwidth 0.2
 set style fill solid
 set key left top samplen 0.3
