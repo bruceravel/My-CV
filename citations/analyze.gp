@@ -16,7 +16,7 @@ set style line 2 linecolor rgb "red"  pointsize 1 pointtype 9
 
 
 count=system("head -1 analyze.txt | cut -d ' ' -f 7")
-date=system("ls -l analyze.txt | cut -f 6,7 -d ' '")cv.tex
+date=system("ls -l analyze.txt | cut -f 6,7 -d ' '")
 #date=system("ls -l analyze.txt | cut -f 6,8 -d ' '")
 
 ttl="citations of Athena/Artemis paper from JSR\n" . count . ' total citations'
@@ -25,13 +25,13 @@ set title ttl
 set xlabel 'year'
 set ylabel 'number of citations'
 set xrange [2004.5:2020.5]
-set yrange [:1050]
+set yrange [:1100]
 set boxwidth 0.2
 set style fill solid
 set key left top samplen 0.3
 
 plot 'analyze.txt' using 1:2
 
-plot 'analyze.txt' using 1:($1>2018 ? 1/0 : $2) with boxes ls 1 title 'yearly totals',\
+plot 'analyze.txt' using 1:($1>2019 ? 1/0 : $2) with boxes ls 1 title 'yearly totals',\
      '' using 1:($2+25):2 with labels title '',\
-     '' using 1:($1<2019 ? 1/0 : $2) with boxes ls 2 title 'as of '.date
+     '' using 1:($1<2020 ? 1/0 : $2) with boxes ls 2 title 'as of '.date
